@@ -5,7 +5,7 @@
 ** Login   <mathon_j@mathonj>
 **
 ** Started on  Mon Mar 10 18:05:06 2014 Jérémy MATHON
-** Last update Wed Mar 19 21:29:41 2014 Jérémy MATHON
+** Last update Thu Mar 20 10:50:52 2014 Jérémy MATHON
 */
 
 #include	<stdio.h>
@@ -13,9 +13,9 @@
 #include	<signal.h>
 #include	"../include/server.h"
 
-char		str[8];
+unsigned char  	str[8];
 
-void		my_put_in_dec(char *str)
+void		my_put_in_dec(unsigned char *str)
 {
   int		i;
   int		dec;
@@ -36,7 +36,7 @@ void		my_put_in_dec(char *str)
     my_putchar(dec);
 }
 
-void		my_ini(char *str)
+void		my_ini(unsigned char *str)
 {
   int		i;
 

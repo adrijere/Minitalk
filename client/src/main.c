@@ -5,7 +5,7 @@
 ** Login   <mathon_j@mathonj>
 **
 ** Started on  Mon Mar 10 18:05:06 2014 Jérémy MATHON
-** Last update Wed Mar 19 21:29:03 2014 Jérémy MATHON
+** Last update Thu Mar 20 10:51:15 2014 Jérémy MATHON
 */
 
 #include	<stdio.h>
@@ -13,7 +13,7 @@
 #include	<signal.h>
 #include	"../include/client.h"
 
-void		send_message(int pid_server, char *tmp)
+void		send_message(int pid_server, unsigned char *tmp)
 {
   int		i;
 
@@ -31,9 +31,9 @@ void		send_message(int pid_server, char *tmp)
     }
 }
 
-char		*check_character(char c)
+unsigned char	*check_character(unsigned char c)
 {
-  char		*tab;
+  unsigned char	*tab;
   int		cpt;
   int		a;
 
@@ -61,7 +61,7 @@ void		convert_to_bin(int pid_server, char *str)
 {
   int		i;
   int		a;
-  char		*tmp;
+unsigned char  	*tmp;
 
   a = 0;
   i = 0;
